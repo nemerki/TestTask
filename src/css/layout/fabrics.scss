@@ -1,0 +1,116 @@
+.fabrics {
+  &-card {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3rem;
+    &__img {
+      height: 32rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+    &__color {
+      width: 8rem;
+      height: 8rem;
+
+      position: absolute;
+      right: 1rem;
+      top: -6.5rem;
+      border-radius: 10px;
+
+      &--1 {
+        background-color: #dbd4cc;
+      }
+      &--2 {
+        background-color: #a9a29c;
+      }
+
+      &--3 {
+        background-color: #c3b09f;
+      }
+    }
+    &__body {
+      padding: 0 1.5rem 1rem 2rem;
+      position: relative;
+    }
+    &__tittle {
+      @include font($mr, 3rem, #062933, 33px);
+      padding-top: 2rem;
+    }
+    &__price {
+      @include font($mr, 1.4rem, #c9a66c, 24px);
+
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .far {
+        font-size: 2.5rem;
+        color: #b7c8cd;
+        cursor: pointer;
+        &:hover {
+          color: #e33b33;
+
+        }
+      }
+      .fas {
+        font-size: 2.5rem;
+        color: #c9a66c;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+
+        &:hover {
+          width: 4.5rem;
+          height: 4.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e9c992;
+          color: $color-white;
+          border-radius: 50%;
+        }
+      }
+    }
+
+  }
+
+  &__btn {
+    margin: 0 auto;
+    @include font($mr, 1.8rem, #bfa688, 24px);
+    border: 1px solid #bfa688;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+      background-color: #bfa688;
+      color: $color-white;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  &__tittle {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include font($mr, 1.8rem, #062933, 24px);
+  }
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: #ede7e0;
+  }
+}

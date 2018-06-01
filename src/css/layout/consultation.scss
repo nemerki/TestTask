@@ -1,0 +1,65 @@
+.consultation {
+  text-align: center;
+  &__tittle {
+    @include font($rm, 1.8rem, $color-dark, 3rem);
+  }
+  &__subtittle {
+    @include font($rm, 1.4rem, #b0a190, 3rem);
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 61rem;
+    height: 16rem;
+    background-color: #f9f7f3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &-item {
+      padding: 18px 30px 25px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #bfa688;
+      }
+    }
+  }
+  &__bottom {
+    padding-bottom: 8rem;
+    background-color: #e1c598;
+  }
+  &__btn {
+    height: 5rem;
+    width: 61rem;
+    background-color: $color-dark;
+    @include font($rsb, 1.6rem, #f2d5a0, 3.6rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__label {
+    display: block;
+    @include font($rsb, 1.6rem, #8b8b8b, 3.6rem);
+    margin: 0;
+  }
+
+  &__select {
+    @include font($mm, 3rem, $color-dark, 3.6rem);
+    border: none;
+    background-color: #f9f7f3;
+    //appearance: none;
+    &:focus {
+      outline: none;
+    }
+
+  }
+}

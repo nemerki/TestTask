@@ -1,0 +1,35 @@
+.textile {
+  background-image: linear-gradient(to bottom,
+          #fff 35%,
+          #fdfaf2 30%,
+          #fdfaf2 79%,
+          #fff 79%,
+          #fff 100%);
+  padding-bottom: 10rem;
+  &__tittle {
+    text-align: center;
+    @include font($mr, 3rem, #062933, 24px);
+  }
+  &__line {
+    width: 45%;
+    height: 3px;
+    background-color: #f3d5a1;
+    margin: 3rem auto;
+  }
+  &-card {
+
+    &__img {
+      height: 32rem;
+      width: 100%;
+      border-radius: 5px;
+    }
+    &__body {
+
+    }
+    &__tittle {
+      @include font($mr, 2.4rem, #062933, 24px);
+      text-align: center;
+      margin-top: 3rem;
+    }
+  }
+}
