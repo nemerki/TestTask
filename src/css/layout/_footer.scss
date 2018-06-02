@@ -16,6 +16,12 @@
       @include font($mm, 1.4rem, $color-white, 2.4rem);
       text-transform: uppercase;
       border: 1px solid transparent;
+      @include respondmax(xxl) {
+        font-size: 1.2rem;
+      }
+      @include respondmax(xl) {
+        font-size: 1rem;
+      }
       &:hover {
         border: 1px solid $color-primary;
         border-radius: 3px;
@@ -49,11 +55,31 @@
   }
 
   &__bottom {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    //display: flex;
+    //justify-content: space-around;
+    //align-items: center;
+    //padding-top: 5rem;
+    //padding-bottom: 4.5rem;
+
     padding-top: 5rem;
     padding-bottom: 4.5rem;
+    text-align: center;
+    position: relative;
+
+  }
+
+  &__rightLogo {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__leftLogo {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__info {
@@ -61,7 +87,7 @@
     text-align: center;
   }
 
-  &__autor{
+  &__autor {
     @include font($mr, 1.4rem, $color-white, 2.4rem);
   }
 
@@ -81,4 +107,12 @@
     }
   }
 
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 102, 203);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

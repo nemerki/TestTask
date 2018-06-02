@@ -81,6 +81,13 @@
     }
   ;
   }
+
+  @if $breakpoint == xxl {
+    @media (max-width: 1299px) {
+      @content
+    }
+  ;
+  }
 }
 
 @mixin font($ff: false, $s: false, $c: false,  $lh: false,$w: false) {
